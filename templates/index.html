@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    <link rel="icon" href="/static/images/profile.ico" type="image/x-icon" sizes="16x16">
+    <link rel="icon" href="{% static 'images/profile.ico' %}" type="image/x-icon" sizes="16x16">
     <title>Mehmet ALAN</title>
 </head>
 <body>
@@ -29,18 +29,18 @@
     </div>
     <div class="centered-container">
         <div class="rounded-image">
-            <img src="/static/images/profile_image.jpg" alt="Profile Image" class="profile-image">
+            <img src="{% static 'images/profile_image.jpg' %}" alt="Profile Image" class="profile-image">
         </div>
         <div class="info">Hi, I'm Mehmet. I'm A Software Developer.</div>
         <div class="button-container">
             <a href="https://www.linkedin.com/in/mehmet-alan07/" class="icon-button-linkedin">
-                <img src="/static/icons/linkedin.svg" alt="Linkedin icon" class="contact-image">
+                <img src="{% static 'icons/linkedin.svg' %}" alt="Linkedin icon" class="contact-image">
             </a>
             <a href="https://github.com/mehmtalnn07" class="icon-button-github">
-                <img src="/static/icons/github.svg" alt="Github icon" class="contact-image">
+                <img src="{% static 'icons/github.svg' %}" alt="Github icon" class="contact-image">
             </a>
             <a href="#" class="icon-button-mail" onclick="sendEmail()">
-                <img src="/static/icons/mail.svg" alt="Mail icon" class="contact-image">
+                <img src="{% static 'icons/mail.svg' %}" alt="Mail icon" class="contact-image">
             </a>
         </div>
         <a href="resume" class="get-resume-button">Get My Resume</a>
