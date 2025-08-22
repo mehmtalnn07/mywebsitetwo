@@ -8,3 +8,4 @@ requests
 django-crispy-forms
 crispy-bootstrap4
 django-cleanup
+django-ckeditor
