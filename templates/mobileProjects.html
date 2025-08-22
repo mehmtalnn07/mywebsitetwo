@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/mwdcProjects.css">
+</head>
+<body>
+    <h1>Mobile Projects</h1>
+    <div class="card-container">
+        {% for project in projects %}
+            <div class="card" onclick="location.href='{{ project.url_name }}';">
+                <h2>{{ project.name }}</h2>
+                <p class="{{ project.os_color }}">({{ project.os }})</p>
+                <img src="/static/icons/{{ project.os_icon }}" alt="{{ project.os }} Icon" class="apple-animation">
+                <hr>
+                {% for tech in project.technologies %}
+                    <div class="technologies">
+                        <p>{{ tech.label }}: {{ tech.value }}</p>
+                        <img src="/static/icons/{{ tech.icon }}" alt="{{ tech.value }} Icon">
+                    </div>
+                {% endfor %}
+                <hr>
+                <p>{{ project.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

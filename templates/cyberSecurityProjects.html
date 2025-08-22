@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/mwdcProjects.css">
+    <title>Cyber Security Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Cyber Security Projects</h1>
+    <div class="card-container">
+        <div class="background-animation" id="card-background-animation"></div>
+        <a href="{% url 'sentinel' %}" class="card">
+            <h2>MITM Attack Detection Tool</h2>
+            <p class="iosColor">(Cyber Security)</p>
+            <hr>
+            <div class="technologies">
+                <p>Language: Python</p>
+                <img src="/static/icons/python.png" alt="Python Icon" class="apple-icon small-icon">
+            </div>
+            <hr>
+            <p>This Python script detects potential Man-in-the-Middle (MITM) attacks by analyzing the ARP table for duplicate MAC addresses. It continuously monitors the network, and if a duplicate MAC address is found, it triggers a custom alert with a red warning window using Tkinter. The script is designed to run in a loop, checking the network every 30 seconds.</p>
+        </a>
+        <a href="{% url 'macchanger' %}" class="card">
+            <h2>Mac Changer With Python</h2>
+            <p class="iosColor">(Cyber Security)</p>
+            <hr>
+            <div class="technologies">
+                <p>Language: Python</p>
+                <img src="/static/icons/python.png" alt="Python Icon" class="apple-icon small-icon">
+            </div>
+            <hr>
+            <p>This Python script changes the MAC address of a network interface. It takes the interface and new MAC address as input, then brings the interface down, changes the MAC address, and brings it back up. Finally, it verifies and confirms whether the change was successful.</p>
+        </a>
+        <a href="{% url 'networkScanner' %}" class="card">
+            <h2>Network Scanner With Python</h2>
+            <p class="iosColor">(Cyber Security)</p>
+            <hr>
+            <div class="technologies">
+                <p>Language: Python</p>
+                <img src="/static/icons/python.png" alt="Python Icon" class="apple-icon small-icon">
+            </div>
+            <hr>
+            <p>Network Scanner is a Python-based tool designed to scan a network and identify active devices connected to it. Using the Scapy library, it sends ARP requests to specified IP addresses and collects responses to list the IP and MAC addresses of detected devices. This project is ideal for network administrators and security professionals for monitoring and troubleshooting network connectivity.</p>
+        </a>
+    </div>
+</body>
+</html>

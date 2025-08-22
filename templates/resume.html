@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/resume.css">
+    <link rel="icon" href="/static/images/profile.ico" type="image/x-icon" sizes="16x16">
+    <title>Resume</title>
+</head>
+<body>
+    <div class="resume-content">
+        <h1>Mehmet ALAN</h1>
+    </div>
+        <div class="resume-content2">
+            <div class="resume-text">
+                <div class="title-text">
+                    <p>Summary</p>
+                </div>
+                <p class="content-text">As a graduate of Electrical and Electronics Engineering, I am a junior enthusiast with a strong passion for mobile application development and cybersecurity. I am advancing by seamlessly integrating my technical expertise and dedication. My hands-on experience in mobile application development, coupled with my keen interest in cybersecurity, has laid the foundation for my committed career path in these specialized domains.</p>
+                <hr class="custom-hr">
+                <div class="title-text">
+                    <p>Contact Information</p>
+                </div>
+                <div>
+                    <p onclick="sendEmail()" class="clickable">mehmtalnn07@gmail.com</p>
+                </div>
+                <hr class="custom-hr">
+                <div class="title-text">
+                    <p >Education: 
+                        <span class="content-text" style="float: none;">Konya Technical University (September 2018 - August 2022)</span>
+                    </p>
+                </div>
+                <hr class="custom-hr">
+                <div class="title-text">
+                    <p>Experience: 
+                        <span class="content-text">Endüstriyel Elektrik Elektronik - Automation Engineer (2022 June - 2023 August)</span>
+                    </p>
+                </div>
+                <hr class="custom-hr">
+                <div class="title-text">
+                    <p>Skills & Technologies</p>
+                </div>
+                <div class="down-title">
+                    <p>Programming and Terminal Languages: 
+                        <span class="content-text">Kotlin, Swift, Dart, Java, Python, SQL, HTML, Bash</span>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>Frameworks: 
+                        <span class="content-text">Flutter, React Native, Compose, Kotlin Multiplatform Mobile Swift UI, Bootstrap, Django </span>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>Databases: 
+                        <span class="content-text">Room Database, MongoDB, MySQL, Firebase</span>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>Other Technologies: 
+                        <span class="content-text">Git, Linux, Kali Linux, Nmap, Wireshark, Metasploit, Burp Suite</span>
+                    </p>
+                </div>
+                <hr class="custom-hr"">
+                <div class="title-text">
+                    <p>Projects</p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/PlansSwift">
+                            <img src="/static/icons/swift.png" alt="Swift Icon" class="project-icon">
+                            Plans IOS:
+                        </a>
+                        <span class="content-text">Swift, SwiftUI, MVVM, Firebase</span>
+                        <a class="project-name-text" href="{% url 'plansImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                      <a class="project-name-text" href="https://github.com/mehmtalnn07/FaceTime">
+                        <img src="/static/icons/swift.png" alt="Swift Icon" class="project-icon">
+                        FaceTime: 
+                    </a>  
+                    <span class="content-text">Swift, UIKit, Firebase, Getstream.io</span>
+                    <a class="project-name-text" href="{% url 'facetimeImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/FlutterAnimationWeatherApp">
+                            <img src="/static/icons/flutter-original.svg" alt="Flutter Icon" class="project-icon">
+                            Flutter Animation Weather App:
+                        </a>
+                        <span class="content-text">Flutter, Dart, OpenWeather API, MVVM</span>
+                        <a class="project-name-text" href="{% url 'flutterWeatherAppImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/QRScannerFlutter">
+                            <img src="/static/icons/flutter-original.svg" alt="Flutter Icon" class="project-icon">
+                            QR Scanner:
+                        </a>
+                        <span class="content-text">Dart, Flutter, Android Studio, Barcode Scanner Library</span>
+                        <a class="project-name-text" href="{% url 'qrScannerImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/RickAndMorty">
+                            <img src="/static/icons/react.svg" alt="Flutter Icon" class="project-icon">
+                            React Rick and Morty API
+                        </a>
+                        <span class="content-text">React-Native, JavaScript, TypeScript, Rick and Morty API</span>
+                        <a class="project-name-text" href="{% url 'rickAndMortyImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/WordGuessGame">
+                            <img src="/static/icons/kotlin.png" alt="Kotlin Icon" class="project-icon">
+                            Word Guess Game:
+                        </a>
+                        <span class="content-text">Kotlin, MVVM, Firebase Authentication, FirebaseFirestore, Firebasestorage</span>
+                        <a class="project-name-text" href="{% url 'wordGuessGameImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/Notebook">
+                            <img src="/static/icons/kotlin.png" alt="Kotlin Icon" class="project-icon">
+                            Notebook:
+                        </a>
+                        <span class="content-text">MVVM, Room Database, Material Design3, Kotlin, Jetpack Compose</span>
+                        <a class="project-name-text" href="{% url 'notebookImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/Bweet">
+                            <img src="/static/icons/kotlin.png" alt="Kotlin Icon" class="project-icon">
+                            Twitter Clone:
+                        </a>
+                        <span class="content-text">Firebase Database, Firestore, Authentication, Live Data</span>
+                        <a class="project-name-text" href="{% url 'twitterImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/Threads">
+                            <img src="/static/icons/kotlin.png" alt="Kotlin Icon" class="project-icon">
+                            Threads Clone:
+                        </a>
+                        <span class="content-text">Kotlin, MVVM, Firebase Database,</span>
+                        <a class="project-name-text" href="{% url 'threadsImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/Notebook">
+                            <img src="/static/icons/kotlin.png" alt="Kotlin Icon" class="project-icon">
+                            WeatherApp:
+                        </a>
+                        <span class="content-text">Retrofit, Accuweather API, MVVM, Jetpack Compose, Kotlin.</span>
+                        <a class="project-name-text" href="{% url 'weatherImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/SimpleVoiceRecorder">
+                            <img src="/static/icons/kotlin.png" alt="Kotlin Icon" class="project-icon">
+                            Simple Voice Recorder:
+                        </a>
+                        <span class="content-text">Kotlin, Jetpack Compose</span>
+                        <a class="project-name-text" href="{% url 'voiceRecorderImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/Recipe">
+                            <img src="/static/icons/kotlin.png" alt="Kotlin Icon" class="project-icon">
+                            Recipe:
+                        </a>
+                        <span class="content-text">Kotlin, Jetpack Compose.</span>
+                        <a class="project-name-text" href="{% url 'recipeImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/SimpleWalletUI">
+                            <img src="/static/icons/kotlin.png" alt="Kotlin Icon" class="project-icon">
+                            Simple Wallet UI:
+                        </a>
+                        <span class="content-text">Kotlin, Jetpack Compose.</span>
+                        <a class="project-name-text" href="{% url 'walletImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/SimpleWalletUI">
+                            <img src="/static/icons/python.png" alt="Kotlin Icon" class="project-icon">
+                            CRM Website:
+                        </a>
+                        <span class="content-text">Python, DJango, HTML, CSS, JavaScript.</span>
+                        <a class="project-name-text" href="{% url 'crmWebImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/SimpleWalletUI">
+                            <img src="/static/icons/python.png" alt="Kotlin Icon" class="project-icon">
+                            MITM Attack Detection Tool:
+                        </a>
+                        <span class="content-text">Python, ARP.</span>
+                        <a class="project-name-text" href="{% url 'sentinelImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/SimpleWalletUI">
+                            <img src="/static/icons/python.png" alt="Kotlin Icon" class="project-icon">
+                            MAC Changer:
+                        </a>
+                        <span class="content-text">Python, Subprocess, Argparse.</span>
+                        <a class="project-name-text" href="{% url 'macChangerImages' %}">Images</a>
+                    </p>
+                </div>
+                <div class="down-title">
+                    <p>
+                        <a class="project-name-text" href="https://github.com/mehmtalnn07/SimpleWalletUI">
+                            <img src="/static/icons/python.png" alt="Kotlin Icon" class="project-icon">
+                            Network Scanner:
+                        </a>
+                        <span class="content-text">Python, Scapy, Optparse.</span>
+                        <a class="project-name-text" href="{% url 'networkScannerImages' %}">Images</a>
+                    </p>
+                </div>
+                <hr class="custom-hr">
+            </div>
+        </div>
+        <div id="bottom"></div>
+        <script src="/static/js/resume.js"></script>
+</body>
+</html>

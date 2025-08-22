@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/wdcImages.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">{{ title }}</div>
+        <div class="image-slider">
+            <button class="nav-button prev">&#10094;</button>
+            <img id="slider-image" 
+                 src="{{ image_paths.0 }}" 
+                 alt="Project Image"
+                 data-image-paths="{% for path in image_paths %}{{ path }}{% if not forloop.last %},{% endif %}{% endfor %}"
+                 >
+            <button class="nav-button next">&#10095;</button>
+        </div>
+    </div>
+    <script src="/static/js/imageSlider.js"></script>
+</body>
+</html>

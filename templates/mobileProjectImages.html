@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/mobileImages.css" />
+    <link rel="icon" href="/static/images/profile.ico" type="image/x-icon" sizes="16x16" />
+    <title>{{ title }}</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+</head>
+<body>
+    <h1 class="title-project">{{ project_title }}</h1>
+    <div class="resized-image-container">
+        {% for path in image_paths %}
+            <img class="resized-image" src="{{ path }}" alt="Project Image {{ forloop.counter }}">
+        {% endfor %}
+    </div>
+    <div class="full-screen-overlay" id="full-screen-overlay">
+        <a id="prev" class="prev nav-btn">
+            <img src="/static/icons/prev.svg" alt="Back Button icon" class="back-button" />
+        </a>
+        <img id="full-screen-image" class="viewer-image" src="" alt="Full Screen Image" />
+        <img id="full-screen-image-next" class="viewer-image" src="" alt="Next Full Screen Image" />
+        <a id="next" class="next nav-btn">
+            <img src="/static/icons/next.svg" alt="Next Button icon" class="back-button" />
+        </a>
+    </div>
+    <script src="/static/js/plansImages.js"></script>
+</body>
+</html>

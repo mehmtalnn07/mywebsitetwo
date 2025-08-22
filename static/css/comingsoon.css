@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Audiowide';
+    src: url('/static/fonts/audiowide.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes pulseBackground {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Audiowide', sans-serif;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(139, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 70%);
+    animation: pulseBackground 10s ease-in-out infinite alternate;
+}
+.coming-soon-container {
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+.title {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: fadeInSlideUp 1s forwards;
+}
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    animation: fadeInSlideUp 1s forwards 0.3s;
+}
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+    animation: fadeInSlideUp 1s forwards 0.6s;
+}
+.countdown-item:hover {
+    transform: translateY(-5px);
+}
+.countdown-item span:first-child {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.countdown-item span:last-child {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+    opacity: 0.7;
+}

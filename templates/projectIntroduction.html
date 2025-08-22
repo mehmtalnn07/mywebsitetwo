@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/projectsDetails.css">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title-wrapper">
+                <a href="{% url pageUrl %}" style="text-decoration: none; color: inherit;">
+                    <h1 class="title">{{project_name}}</h1>
+                </a>
+            </div>
+            <a href="{% url pageUrl %}" class="images-link">View Project Images</a>
+        </header>
+        <hr>
+        <section class="project-overview">
+            {% if title or project_purpose %}
+                <h2 class="subtitle">- Project Overview -</h2>
+                <div class="content fade-in-text">
+                    {% if title %}
+                        <p><strong>Project Name:</strong> {{title}}</p>
+                    {% endif %}
+                    {% if project_purpose %}
+                        <p><strong>Purpose:</strong>{{project_purpose}}</p>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </section>
+        <hr>
+        {% if technologies_used_one %}
+            <section class="technologies-used">
+                <h2 class="subtitle">{{technologies_used_one}}</h2>
+                {% if technologies_used_one_introduction %}
+                    <div class="content">
+                        {{technologies_used_one_introduction}}
+                    </div>
+                {% endif %}
+                <div class="technology-grid">
+                    {% if technologies_used_one_card_one %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_one_card_one}}</p>
+                            <span>
+                                {{technologies_used_one_card_one_content}}
+                                <span><span style="color: aqua;">{{card_one_content_title_one}}</span>{{card_one_content_title_one_content}}</span>
+                                <span><span style="color: aqua;">{{card_one_content_title_two}}</span>{{card_one_content_title_two_content}}</span>
+                                <span><span style="color: aqua;">{{card_one_content_title_three}}</span>{{card_one_content_title_three_content}}</span>
+                            </span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_one_card_two %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_one_card_two}}</p>
+                            <span>
+                                {{technologies_used_one_card_two_content}}
+                                <span><span style="color: aqua;">{{card_two_content_title_one}}</span>{{card_two_content_title_one_content}}</span>
+                                <span><span style="color: aqua;">{{card_two_content_title_two}}</span>{{card_two_content_title_two_content}}</span>
+                                <span><span style="color: aqua;">{{card_two_content_title_three}}</span>{{card_two_content_title_three_content}}</span>
+                                <span><span style="color: aqua;">{{card_two_content_title_four}}</span>{{card_two_content_title_four_content}}</span>
+                            </span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_one_card_three %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_one_card_three}}</p>
+                            <span>
+                                {{technologies_used_one_card_three_content}}
+                                <span><span style="color: aqua;">{{card_three_content_title_one}}</span>{{card_three_content_title_one_content}}</span>
+                                <span><span style="color: aqua;">{{card_three_content_title_two}}</span>{{card_three_content_title_two_content}}</span>
+                            </span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_one_card_four %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_one_card_four}}</p>
+                            <span>{{technologies_used_one_card_four_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_one_card_five %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_one_card_five}}</p>
+                            <span>{{technologies_used_one_card_five_content}}</span>
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+            <hr>
+        {% endif %}
+        {% if technologies_used_two %}
+            <section class="technologies-used">
+                <h2 class="subtitle">{{technologies_used_two}}</h2>
+                {% if technologies_used_two_introduction %}
+                    <div class="content">
+                        {{technologies_used_two_introduction}}
+                    </div>
+                {% endif %}
+                <div class="technology-grid">
+                    {% if technologies_used_two_card_one %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_two_card_one}}</p>
+                            <span>
+                                {{technologies_used_two_card_one_content}}
+                                <span><span style="color: aqua;">{{used_two_card_one_content_title_one}}</span>{{used_two_card_one_content_title_one_content}}</span>
+                                <span><span style="color: aqua;">{{used_two_card_one_content_title_two}}</span>{{used_two_card_one_content_title_two_content}}</span>
+                                <span><span style="color: aqua;">{{used_two_card_one_content_title_three}}</span>{{used_two_card_one_content_title_three_content}}</span>
+                            </span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_two_card_two %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_two_card_two}}</p>
+                            <span>{{technologies_used_two_card_two_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_two_card_three %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_two_card_three}}</p>
+                            <span>{{technologies_used_two_card_three_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_two_card_four %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_two_card_four}}</p>
+                            <span>{{technologies_used_two_card_four_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_two_card_five %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_two_card_five}}</p>
+                            <span>{{technologies_used_two_card_five_content}}</span>
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+            <hr>
+        {% endif %}
+        {% if technologies_used_three %}
+            <section class="technologies-used">
+                <h2 class="subtitle">{{technologies_used_three}}</h2>
+                {% if technologies_used_three_introduction %}
+                    <div class="content">
+                        {{technologies_used_three_introduction}}
+                    </div>
+                {% endif %}
+                <div class="technology-grid">
+                    {% if technologies_used_three_card_one %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_three_card_one}}</p>
+                            <span>{{technologies_used_three_card_one_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_three_card_two %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_three_card_two}}</p>
+                            <span>{{technologies_used_three_card_two_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_three_card_three %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_three_card_three}}</p>
+                            <span>{{technologies_used_three_card_three_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_three_card_four %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_three_card_four}}</p>
+                            <span>{{technologies_used_three_card_four_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_three_card_five %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_three_card_five}}</p>
+                            <span>{{technologies_used_three_card_five_content}}</span>
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+            <hr>
+        {% endif %}
+        {% if technologies_used_four %}
+            <section class="technologies-used">
+                <h2 class="subtitle">{{technologies_used_four}}</h2>
+                {% if technologies_used_four_introduction %}
+                    <div class="content">
+                        {{technologies_used_four_introduction}}
+                    </div>
+                {% endif %}
+                <div class="technology-grid">
+                    {% if technologies_used_four_card_one %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_four_card_one}}</p>
+                            <span>{{technologies_used_four_card_one_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_four_card_two %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_four_card_two}}</p>
+                            <span>{{technologies_used_four_card_two_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_four_card_three %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_four_card_three}}</p>
+                            <span>{{technologies_used_four_card_three_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_four_card_four %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_four_card_four}}</p>
+                            <span>{{technologies_used_four_card_four_content}}</span>
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+            <hr>
+        {% endif %}
+        {% if technologies_used_five %}
+            <section class="technologies-used">
+                <h2 class="subtitle">{{technologies_used_five}}</h2>
+                <div class="technology-grid">
+                    {% if technologies_used_five_card_one %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_five_card_one}}</p>
+                            <span>{{technologies_used_five_card_one_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_five_card_two %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_five_card_two}}</p>
+                            <span>{{technologies_used_five_card_two_content}}</span>
+                        </div>
+                    {% endif %}
+                    {% if technologies_used_five_card_three %}
+                        <div class="minititle fade-in-item">
+                            <p>{{technologies_used_five_card_three}}</p>
+                            <span>{{technologies_used_five_card_three_content}}</span>
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+            <hr>
+        {% endif %}
+        {% if conclusion_content %}
+            <footer class="conclusion">
+                <h2 class="subtitle">- Conclusion -</h2>
+                <div class="content fade-in-text">
+                    <p>{{conclusion_content}}</p>
+                </div>
+            </footer>
+        {% endif %}
+    </div>
+</body>
+</html>
