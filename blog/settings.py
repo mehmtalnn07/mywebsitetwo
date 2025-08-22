@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-xm6&+f@*tytp6^419*+qi)&@mg)n0ho)2c2=*rh72zb1ify5by
 DEBUG = False
 
 # Render domainini buraya ekle
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["alanmehmet.com", "www.alanmehmet.com", "mywebsitetwo-a1xt.onrender.com"]
 
 # Application definition
 INSTALLED_APPS = [
