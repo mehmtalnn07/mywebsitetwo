@@ -5,3 +5,6 @@ dj-database-url
 djangorestframework
 Pillow
 requests
+django-crispy-forms
+crispy-bootstrap4
+django-cleanup
