@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="icon" href="/static/images/profile.ico" type="image/x-icon" sizes="16x16">
     <title>Mehmet ALAN</title>
 </head>
@@ -48,6 +49,6 @@
         <p>&copy; 2025 Mehmet ALAN. All rights reserved.</p>
         <a href="sourceCode" class="source-code-text">source code</a>
     </footer>
-    <script src="/static/js/index.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
